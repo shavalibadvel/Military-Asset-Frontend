@@ -24,7 +24,7 @@ function Login() {
     setLoading(true);
 
     try {
-      var response = await fetch("/api/auth/login", {
+      var response = await fetch("https://military-asset-backend-1-q1hf.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
