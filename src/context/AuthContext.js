@@ -27,7 +27,7 @@ export function AuthProvider(props) {
     options.headers["Content-Type"] = "application/json";
     options.headers["Authorization"] = "Bearer " + token;
 
-    var API_URL = "https://military-asset-backend-1-q1hf.onrender.com";
+    var API_URL = "https://military-asset-backend-1-q1hf.onrender.com/";
     var response = await fetch(API_URL + url, options);
     if (response.status === 401) {
       logout();
